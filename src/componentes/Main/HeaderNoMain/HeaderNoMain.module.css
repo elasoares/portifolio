@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Maven+Pro:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul li{
+ list-style: none;
+}
+html{
+	overflow-x:hidden;
+	scroll-behavior: smooth;
+}
+
+.container-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 65px 0 0 0; 
+	height: 85vh;
+	border-radius: 24px;
+	background: #221d2d;
+	color: #fdfcfd;
+	font-family: 'Poppins', sans-serif;
+	width: 100%;
+}
+
+
+/*=== Informações do título e subtitulo ===*/
+.container-info{
+	display: flex;
+	justify-content: flex-end;
+	align-items:  center;
+	flex-direction: column;
+	flex-wrap: wrap;
+/* 	overflow-y: hidden; */
+	padding-bottom: 20px;
+	height: 90vh;
+}
+
+.titulo{
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.subtitulo{
+	font-size: 10px;
+	font-family: "Space Grotesk", sans-serif;
+	font-weight: 400;
+	opacity: 0.60;
+	margin-bottom: 20px;
+	transform: uppercase;
+}
+
+
+
+/* ============ Botões ============ */
+.container-botao{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+}
+
+.botao{
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 8px;
+	background-color: transparent;
+	border: 1px solid #6939ff;
+	color: #6939ff;
+	padding: 6px 10px;
+	border-radius: 40px;
+}
+
+.botao:hover{
+	filter: brightness(0.8);
+	cursor: pointer;
+	transform: scale(1.1);
+	}
+
+.botao:active{
+	filter: brightness(0.5);
+	}
+
+.botao-contato{
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 8px;
+	background-color: #6939ff;
+	border: 1px solid #6939ff;
+	color: #ccc;
+	border-radius: 40px;
+	padding: 9px 11px;
+}
+
+.botao-contato:hover{
+	transform: scale(1.1);
+		filter: brightness(0.8);
+		cursor: pointer;
+}
+
+
+/* ============ Icon ============ */
+.icon-download{
+	font-size: 0.7rem; 
+}
+
+.item-icon{
+	font-size: 1.5rem; 
+	color: #ccc;
+}
+
+.item-icon:hover{
+	color:#6939ff;
+	filter: brightness(0.5);
+	transform: scale(1.2);
+	opacity:  0.5;
+}
+
+.icon{
+	display: none;
+}
+
+
+
+/* ============ Foto ============ */
+.foto{
+  text-align: center;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	margin-top: -200px;
+ z-index: 1001;
+	position: absolute;
+}
+
+
+
+
+
+@media (min-width: 440px){
+	.container-main {
+		margin: 100px 0 0 0;
+	}
+
+	/* ============ Foto ============ */
+	.foto{
+		margin: -45% 0 0 0;
+		width: 65%;
+		height: 55%;
+		max-width: 1000px;
+		box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+		border-radius: inherit;
+		object-fit: cover;
+
+	}
+
+
+
+}
+
+@media (min-width: 650px){
+
+	/*============ Foto ============ */
+	.foto{
+	max-width: 280px;
+	width: 50%;
+	height: 315px;
+	border-radius: inherit;
+	object-fit: cover;
+	position: absolute;
+	margin: 0 0 0 0;
+	right: 2%;
+	box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+	}
+
+	
+	/*=== Informações do título e subtitulo ===*/
+	.container-info{
+	  display: flex;
+		justify-content: center ;
+		align-items: flex-start;
+		margin: 25px 0 0 10px;
+	}
+
+	.titulo{
+		font-size: 20px;
+	}
+
+	.subtitulo{
+		font-size: 18px;
+	}
+	
+/* ============ Icon ============  */
+	.item-icon{
+		font-size: 1rem; 
+		color: #ccc;
+	}
+
+	.icon{
+		display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		 gap: 15px;
+	}
+
+	/* ============ Botões ============ */
+	.botao-contato{
+		padding: 10px 12px;
+	}
+
+	.botao a{
+		padding: 8px 10px;
+		font-size: 7px;
+	}
+	
+}
+
+
+@media (min-width: 700px){
+
+	.container-main{
+		display: flex;
+		justify-content: flex-start;
+    align-items: center;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		backdrop-filter: blur(5px);
+	}
+
+
+	/* ============ Icon ============  */	
+	.item-icon{
+		font-size: 1.4rem; 
+		color: #ccc;
+	}
+	
+	.icon{
+		display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		 gap: 25px;
+		padding-left:0;
+	}
+
+
+	/* ============ Foto ============ */
+.foto{
+		max-width: 280px;
+		width: 35vw;
+		height: 250px;
+		border-radius: inherit;
+		object-fit: cover;
+		position: absolute;
+		margin: 0 0 0 0;
+		right: 10%;
+		box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+	}
+
+
+	/*=== Informações do título e subtitulo ===*/
+	.container-info{
+		margin: 0 0 0 55px;
+	}
+	
+	.titulo{
+		font-size: 40px;
+	}
+	
+	.subtitulo{
+		font-size: 18px;
+	}
+
+	
+	/* ============ Botões ============ */
+	.botao-contato{
+		padding: 12px 12px;
+	}
+
+	.botao{
+		padding: 10px 10px;
+		font-size: 7px;
+	}
+}
+
+
+
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 5; }
+}
+
+.fadeIn {
+	animation: fadeIn 2s ease-in;
+}
+
+@keyframes typing{
+	from{ width: 0;}
+	to{ width: 100%;}
+}
+
+
+/* ============ Animação do título ============*/
+@keyframes blink{
+	from{border-right-color: rgba(255, 255, 255, 0.75)}
+	to{border-right-color: black;}
+}
+
+.typingAnimation{
+	display: inline-block;
+	overflow: hidden;
+ 	text-transform: uppercase; 
+	border-right: .15em solid  rgba(255, 255, 255, 0.75);
+	white-space: nowrap;
+	margin: 0 auto;
+	animation: typing 3.5s steps(30, end), blink .75s step-end infinite;
+}

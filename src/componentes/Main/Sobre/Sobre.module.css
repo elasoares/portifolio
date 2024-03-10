@@ -1,0 +1,55 @@
+.container{
+		display: flex;
+	justify-content: center;
+		align-items: center;
+	 flex-direction: column;
+
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	gap: 10px;
+	}
+
+.containerTitulo{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.titulo{
+	margin-bottom: 0.5em;
+	font-size: 1em;
+	color: #222;
+	text-align: center;
+}
+
+.tracoDoTitulo{
+	border-top: 4px solid orange;
+	/* border-bottom: 4px solid orange; */
+	border-radius: 5px 5px 20px 5px;
+	padding: 0 20px 15px;
+}
+
+.paragrafo{
+	margin-bottom: 1em;
+	font-size: 0.5em;
+	line-height: 1.6;
+	color: #666;
+}
+
+.foto{
+	width: 200px;
+	height: 300px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+@media (min-width: 650px){
+	.container{
+		display: flex;
+		justify-content: space-between;
+		padding: 40px 20px;
+		background-color: #f9f9f9;
+		border-radius: 10px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+}

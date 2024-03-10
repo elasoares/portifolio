@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul li{
+ list-style: none;
+}
+html{
+	scroll-behavior: smooth;
+}
+/* ================================================== */
+
+.container-main{
+	display: grid;
+	grid-template-areas: 
+		"area-meus-dados" "area-minha-foto"
+	  "sobre-mim" "sobre-mim" ;
+	grid-template-rows: repeat(3, 450px);
+/* 	grid-template-columns: repeat(2, auto); */
+	width: 100%;
+	overflow-x: hidden;
+	gap: 55px;
+	padding: 0 20px;
+}
+
+.area-meus-dados{
+	grid-area: area-meus-dados;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-color: #f7f7f7;
+
+}
+
+.area-minha-foto{
+	grid-area: area-minha-foto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-color: #f7f7f7;
+}
+
+.sobre-mim{
+	grid-area: sobre-mim;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (min-width: 650px){
+/* 	.container-main{
+		display: grid;
+		grid-template-areas: 
+			"area-meus-dados" "area-minha-foto"
+		 "sobre-mim" "sobre-mim"
+		 "experiencia" "experiencia";
+		grid-template-rows: repeat(4, auto); 
+	 	 grid-template-columns: repeat(2, 50%); 
+		width: 100%;
+		overflow-x: hidden;
+		padding-top: 50px;
+	}
+ */
+
+	
+}
